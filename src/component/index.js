@@ -5,7 +5,7 @@ import CommanSearch from './search/CommanSearch';
 import MenuIcon from '@mui/icons-material/Menu';
 import DropdownBar from './Pages/sidebar/Sidebar';
 import { Grid } from '@mui/material';
-import CottageRoundedIcon from '@mui/icons-material/CottageRounded';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import VolunteerActivismRoundedIcon from '@mui/icons-material/VolunteerActivismRounded';
 const Header = () => {
@@ -15,49 +15,47 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ backgroundColor: 'beige', height: '80px' }}>
+    <div style={{ backgroundColor: '#d9b99b', height: '80px' }}>
       <nav>
         <ul>
           <div style={{ display: 'flex' }}>
             <Grid container padding="10px">
               <Grid lg={2}>
-                <div onClick={handleSidebarToggle}>
-                  <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle} />
-                </div>
-              </Grid>
-              <Grid lg={2} style={{ display: "flex", justifyContent: "end" }}>
                 <div style={{ display: 'flex' }}>
                   <img src="/applogo/applogo.png" height={60} />
                 </div>
               </Grid>
-              <Grid lg={4}>
-                <div style={{ paddingRight: '30px', display: 'flex', justifyContent: 'center' }}>
+              <Grid lg={6} style={{ display: "flex", justifyContent: 'flex-start', padding: 5 }}>
+                <div >
                   <CommanSearch />
                 </div>
               </Grid>
-              <Grid lg={4} style={{ display: 'flex', flexDirection: 'row' }} >
-                <Grid container>
-                  <Grid lg={4}>
-                    <div>
-                      <Link to="/">
-                        <CottageRoundedIcon style={{color:'black',height:'50px',fontSize:'40px'}}  />
-                      </Link>
-                    </div>
-                  </Grid>
-                  <Grid lg={4}>
-                    <div>
-                      <Link to="/route1">
-                        <ShoppingCartRoundedIcon style={{color:'black',height:'50px',fontSize:'40px'}} />
-                      </Link>
-                    </div>
-                  </Grid>
-                  <Grid lg={4}>
-                    <div>
-                      <Link to="/route2">
-                        <VolunteerActivismRoundedIcon style={{color:'black',height:'50px',fontSize:'40px'}} />
-                      </Link>
-                    </div>
-                  </Grid>
+              <Grid lg={1}>
+                <div onClick={handleSidebarToggle}>
+                  <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle} />
+                </div>
+              </Grid>
+              <Grid lg={3} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }} >
+                <Grid >
+                  <div>
+                    <Link to="/">
+                      <HomeOutlinedIcon style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }} />
+                    </Link>
+                  </div>
+                </Grid>
+                <Grid >
+                  <div>
+                    <Link to="/route1">
+                      <ShoppingCartRoundedIcon style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }} />
+                    </Link>
+                  </div>
+                </Grid>
+                <Grid >
+                  <div>
+                    <Link to="/route2">
+                      <VolunteerActivismRoundedIcon style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }} />
+                    </Link>
+                  </div>
                 </Grid>
               </Grid>
             </Grid>
