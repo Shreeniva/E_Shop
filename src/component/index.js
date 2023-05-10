@@ -31,11 +31,11 @@ const Header = () => {
                 </div>
               </Grid>
               <Grid lg={4} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }} >
-                <Grid style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }}>
+                {/* <Grid style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }}>
                   <div onClick={handleSidebarToggle}>
                     <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle} />
                   </div>
-                </Grid>
+                </Grid> */}
                 <Grid >
                   <div>
                     <Link to="/">
