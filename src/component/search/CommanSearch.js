@@ -9,13 +9,15 @@ export default function CommonSearch(props) {
         <TextField
             autoFocus={searchVal ? true : false}
             sx={{
-                borderRadius: 5,
+                borderRadius: 3,
                 backgroundColor: '#F4F7FE',
                 mr: '10px',
                 '& .MuiOutlinedInput-root': {
-                    height: '42px',
+                    height: '50px',
                 },
-                '& fieldset': { border: type ? '1.5px solid #707175' : 'none', borderRadius: 5 },
+                '& fieldset': { border: type ? '1.5px solid #707175' : 'none', borderRadius: 2 },
+                height:'50px',
+                width:'300px'
             }}
             InputProps={{
                 startAdornment: (

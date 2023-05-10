@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DropdownBar.css';
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 const DropdownBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const DropdownBar = () => {
   return (
     <div className="dropdown-bar">
       <div className="dropdown-button" onClick={toggleDropdown}>
-      <MenuIcon style={{fontSize:"40px"}}/>
+      <MenuRoundedIcon />
       </div>
       {isOpen && (
         <div className="dropdown-content" style={{height:'50vh'}}>
