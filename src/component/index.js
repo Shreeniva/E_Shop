@@ -5,7 +5,9 @@ import CommanSearch from './search/CommanSearch';
 import MenuIcon from '@mui/icons-material/Menu';
 import DropdownBar from './Pages/sidebar/Sidebar';
 import { Grid } from '@mui/material';
-
+import CottageRoundedIcon from '@mui/icons-material/CottageRounded';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import VolunteerActivismRoundedIcon from '@mui/icons-material/VolunteerActivismRounded';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,30 +21,44 @@ const Header = () => {
           <div style={{ display: 'flex' }}>
             <Grid container padding="10px">
               <Grid lg={2}>
-              <div onClick={handleSidebarToggle}>
-              <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle}/>
-            </div>
+                <div onClick={handleSidebarToggle}>
+                  <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle} />
+                </div>
               </Grid>
-              <Grid lg={2} style={{display:"flex", justifyContent:"end"}}>
-              <div style={{ display: 'flex' }}>
-              <img src="/applogo/applogo.png" height={60} />
-            </div>
-              </Grid>
-              <Grid lg={4}>
-              <div style={{ paddingRight: '30px', display: 'flex', justifyContent: 'center' }}>
-              <CommanSearch />
-            </div>
+              <Grid lg={2} style={{ display: "flex", justifyContent: "end" }}>
+                <div style={{ display: 'flex' }}>
+                  <img src="/applogo/applogo.png" height={60} />
+                </div>
               </Grid>
               <Grid lg={4}>
-              <div style={{ paddingRight: '30px', fontFamily: 'sans-serif', fontSize: 'bold', display: 'flex', justifyContent: 'center' }}>
-              <Link to="/">Home</Link>
-            </div>
-            <div style={{ paddingRight: '30px', fontFamily: 'sans-serif', display: 'flex', justifyContent: 'center' }}>
-              <Link to="/route1">Route 1</Link>
-            </div>
-            <div style={{ paddingRight: '30px', fontFamily: 'sans-serif', display: 'flex', justifyContent: 'center' }}>
-              <Link to="/route2">Route 2</Link>
-            </div>
+                <div style={{ paddingRight: '30px', display: 'flex', justifyContent: 'center' }}>
+                  <CommanSearch />
+                </div>
+              </Grid>
+              <Grid lg={4} style={{ display: 'flex', flexDirection: 'row' }} >
+                <Grid container>
+                  <Grid lg={4}>
+                    <div>
+                      <Link to="/">
+                        <CottageRoundedIcon style={{color:'black',height:'50px',fontSize:'40px'}}  />
+                      </Link>
+                    </div>
+                  </Grid>
+                  <Grid lg={4}>
+                    <div>
+                      <Link to="/route1">
+                        <ShoppingCartRoundedIcon style={{color:'black',height:'50px',fontSize:'40px'}} />
+                      </Link>
+                    </div>
+                  </Grid>
+                  <Grid lg={4}>
+                    <div>
+                      <Link to="/route2">
+                        <VolunteerActivismRoundedIcon style={{color:'black',height:'50px',fontSize:'40px'}} />
+                      </Link>
+                    </div>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </div>
