@@ -30,12 +30,12 @@ const Header = () => {
                   <CommanSearch />
                 </div>
               </Grid>
-              <Grid lg={1}>
-                <div onClick={handleSidebarToggle}>
-                  <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle} />
-                </div>
-              </Grid>
-              <Grid lg={3} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }} >
+              <Grid lg={4} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }} >
+                {/* <Grid style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }}>
+                  <div onClick={handleSidebarToggle}>
+                    <DropdownBar isOpen={isOpen} onClose={handleSidebarToggle} />
+                  </div>
+                </Grid> */}
                 <Grid >
                   <div>
                     <Link to="/">
