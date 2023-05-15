@@ -42,7 +42,7 @@ export default function ProductCard() {
             </Grid>
             <Grid lg={2} style={{ display: "flex", justifyContent: "end" }}>
               <Box>
-                <Button style={{ backgroundColor: "orange", color: "white" }}>Explore</Button>
+                <Button style={{ backgroundColor: "#374151", color: "white" }}>Explore</Button>
               </Box>
             </Grid>
           </Grid>

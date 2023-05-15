@@ -1,45 +1,26 @@
-import { Button, Card, Grid } from '@mui/material'
+import { Card, Grid } from '@mui/material'
 import React from 'react'
-import { DataGrid } from '@mui/x-data-grid';
-import MaterialTable, { MTableToolbar } from '@material-table/core'
 
 function wishlist() {
-
+  const array = [
+    {
+      name:'1'
+    },
+    {
+      name:'2'
+    },
+    {
+      name:'3'
+    },
+    {
+      name:'4'
+    }
+]
   return (
-    <Grid Container>
-        <Grid item lg={12} md={12}>
-        <Card>
-        <div style={{ maxWidth: "100%" }}>
-        <MaterialTable
-          columns={[
-            { title: "Adı", field: "name" },
-            { title: "Soyadı", field: "surname" },
-            { title: "Doğum Yılı", field: "birthYear", type: "numeric" },
-            {
-              title: "Doğum Yeri",
-              field: "birthCity",
-              lookup: { 34: "İstanbul", 63: "Şanlıurfa" },
-            },
-          ]}
-          data={[
-            {
-              name: "Mehmet",
-              surname: "Baran",
-              birthYear: 1987,
-              birthCity: 63,
-            },
-          ]}
-          title="Demo Title"
-        />
-      </div>
-        </Card>
-        </Grid>
-        <Grid>
-
-        </Grid>
-        <Grid>
-
-        </Grid>
+    <Grid style={{padding:10}}>
+      {array.map((v) => <Card style={{ minHeight: '100px', maxHeight: '100px', boxShadow: '3px 3px 6px 1px', borderRadius: '10px' }}>
+        {v.name}
+      </Card>)}
     </Grid>
   )
 }
