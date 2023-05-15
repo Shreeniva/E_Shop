@@ -45,14 +45,14 @@ const Header = () => {
                 </Grid>
                 <Grid >
                   <div>
-                    <Link to="/route1">
+                    <Link to="/cart">
                       <ShoppingCartRoundedIcon style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }} />
                     </Link>
                   </div>
                 </Grid>
                 <Grid >
                   <div>
-                    <Link to="/route2">
+                    <Link to="/wishlist">
                       <VolunteerActivismRoundedIcon style={{ color: '#374151', height: '50px', fontSize: '30px', padding: 3, marginLeft: '5px' }} />
                     </Link>
                   </div>

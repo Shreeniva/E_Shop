@@ -7,9 +7,6 @@ function HomePage() {
    return (
          <Grid style={{ display: 'flex', justifyContent: 'center', padding: 10 ,backgroundColor:'#fff0db'}}>
             <Card elevation={15}>
-                {/* <div style={{ display: 'flex' }}>
-                    <img src={persons} />
-                </div> */}
                 <div style={{display:'flex'}}>
                   <Grid container>
                      <Grid lg={4}>
@@ -21,10 +18,7 @@ function HomePage() {
                      <Grid lg={4}>
                      <SliderImages pageType="thirdSlider"/>
                      </Grid>
-                  </Grid>
-                
-                
-                
+                  </Grid>           
                 </div>
             </Card>
         </Grid>
