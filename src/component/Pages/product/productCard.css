@@ -1,0 +1,5 @@
+.products-list-item article:hover {
+    border    : solid 5px #ffffff;
+    box-shadow: 0px 0px 20px rgba(205, 45, 45, 0.06);
+    border-radius: 15px;
+  }

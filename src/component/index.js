@@ -15,7 +15,7 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ backgroundColor: '#d9b99b', height: '80px' }}>
+    <div style={{ backgroundColor: '#d9b99b', height: '80px' ,borderRadius:'10px'}}>
       <nav>
         <ul>
           <div style={{ display: 'flex' }}>
