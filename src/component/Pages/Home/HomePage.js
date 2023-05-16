@@ -1,8 +1,8 @@
 import React from 'react'
-import MovingCards from './MovingCards';
-import SliderImages from '../Slider';
+import SliderImages from '../../Slider';
 import { Card, Grid } from '@mui/material';
-import ProductCard from './product/productCard';
+import Arrivals from './Arrivals';
+
 
 function HomePage() {
    return (
@@ -25,7 +25,7 @@ function HomePage() {
             </Card>
         </Grid>
         <div style={{ marginTop:"15px", marginBottom:"200px"}}>
-            <ProductCard/>
+            <Arrivals/>
         </div>
         </div>
    )
