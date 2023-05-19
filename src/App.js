@@ -7,6 +7,7 @@ import HomePage from './component/Pages/Home/HomePage';
 import ProductCard from './component/Pages/product/productCard';
 import Arrivals from './component/Pages/Home/Arrivals'
 import GlobalResult from './component/Pages/common/GlobalResult';
+import Ro from './component/Pages/Home/Ro'
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/wishlist" component={wishlist} />
          <Route path="/productCard" component={ProductCard} />
          <Route path="/arrivals" component={Arrivals} />
-         <Route path="/GlobalResult" component={GlobalResult} />
+         <Route path="/globalResult" component={GlobalResult} />
+         <Route path="/ro" component={Ro} />
         {/*<Route path="/route2" component={Route2} /> */}
       </Switch>
     </Router>

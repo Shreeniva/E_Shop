@@ -4,7 +4,7 @@ import React from 'react'
 import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
 import "./productCard.css"
 
-export default function ProductCard({productDetail}) {
+export default function ProductCard({productDetail, pageType}) {
   const dress = [
     {
       name: 'shirt1'
@@ -20,24 +20,12 @@ export default function ProductCard({productDetail}) {
     },
     ]
 
-    const bigImg = (x) => {
-       x.style.height = "464px";
-       x.style.width = "464px";
-      }
-      
-      
-      
-      const normalImg = (x)=> {
-       x.style.height = "32px";
-       x.style.width = "32px";
-      }
-
   return (
           <div style={{ cursor: 'pointer' }} className="products-list-item article:hover">
             <article style={{width:"90%"}}>
               <Box bgcolor='#fff0db' borderRadius='15px' height="100%" width="100%" style={{width:"fitContent"}}>
                 <Box textAlign='left'>
-                  <img src="/images/shirt.jpg"  alt='' style={{ height: "100%", width: "100%", borderRadius: "15px" }} />
+                  <img src={pageType === "Ro" ? "images/purifier.jpg" : "/images/shirt.jpg"}  alt='' style={{ height: "100%", width: "100%", borderRadius: "15px" }} />
                 </Box>
 
                 <figcaption>
