@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import imge from "../../photos/wardroom.jpg";
 
 export default function SliderImages({ pageType }) {
     const [imageNum, setImageNum] = useState(1);
